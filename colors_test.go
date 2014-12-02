@@ -31,4 +31,17 @@ var _ = Describe("colors", func() {
       Expect(colors.Yellow("INFO")).To(Equal("\x1b[33mINFO\x1b[0m"))
     })
   })
+
+  Describe("Gray", func() {
+    It("adds the gray color code", func() {
+      Expect(colors.Gray("INFO")).To(Equal("\x1b[90mINFO\x1b[0m"))
+    })
+  })
+
+  Describe("Light Gray", func() {
+    It("adds the light gray color code", func() {
+      Expect(colors.LightGray("INFO")).To(Equal("\x1b[37mINFO\x1b[0m"))
+    })
+  })
+
 })
