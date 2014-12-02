@@ -44,4 +44,16 @@ var _ = Describe("colors", func() {
     })
   })
 
+  Describe("Blue", func() {
+    It("adds the blue color code", func() {
+      Expect(colors.Blue("INFO")).To(Equal("\x1b[34mINFO\x1b[0m"))
+    })
+  })
+
+  Describe("Magenta", func() {
+    It("adds the magenta color code", func() {
+      Expect(colors.Magenta("INFO")).To(Equal("\x1b[35mINFO\x1b[0m"))
+    })
+  })
+
 })

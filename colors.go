@@ -3,9 +3,11 @@ package colors
 import "fmt"
 
 const (
+  blue         string = "\x1b[34m"
   cyan         string = "\x1b[36m"
   gray         string = "\x1b[90m"
   green        string = "\x1b[32m"
+  magenta      string = "\x1b[35m"
   red          string = "\x1b[91m"
   yellow       string = "\x1b[33m"
   lightGray    string = "\x1b[37m"
@@ -34,6 +36,14 @@ func Gray(output string) string {
 
 func LightGray(output string) string {
   return colorize(lightGray, output) 
+}
+
+func Blue(output string) string {
+  return colorize(blue, output) 
+}
+
+func Magenta(output string) string {
+  return colorize(magenta, output) 
 }
 
 func colorize(color string, output string) string {
