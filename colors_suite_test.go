@@ -1,4 +1,4 @@
-package colors_test
+package indigo_test
 
 import (
   . "github.com/onsi/ginkgo"

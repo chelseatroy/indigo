@@ -1,4 +1,4 @@
-package colors
+package indigo
 
 import "fmt"
 

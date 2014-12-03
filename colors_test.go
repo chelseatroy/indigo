@@ -1,10 +1,10 @@
-package colors_test
+package indigo_test
 
 import (
   . "github.com/onsi/ginkgo"
   . "github.com/onsi/gomega"
 
-  "github.com/chelseatroy/indigo/colors"
+  colors "github.com/chelseatroy/indigo"
 )
 
 var _ = Describe("colors", func() {
